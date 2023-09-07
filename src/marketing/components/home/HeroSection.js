@@ -37,9 +37,9 @@ function HeroSection(props) {
                 Easy scheduling ahead
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                BookMyCalendar is your scheduling automation platform for
-                eliminating the back-and-forth emails to find the perfect time —
-                and so much more.
+                SaaSBox is your scheduling automation platform for eliminating
+                the back-and-forth emails to find the perfect time — and so much
+                more.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <Tooltip

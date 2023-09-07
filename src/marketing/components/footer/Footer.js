@@ -104,9 +104,8 @@ export default function FooterSection() {
           <div className="space-y-8">
             <img className="h-7" src="/brand_logo.png" alt="Company name" />
             <p className="text-sm leading-6 text-gray-600">
-              BookMyCalendar is your scheduling automation platform for
-              eliminating the back-and-forth emails to find the perfect time —
-              and so much more.
+              SaaSBox is your scheduling automation platform for eliminating the
+              back-and-forth emails to find the perfect time — and so much more.
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
