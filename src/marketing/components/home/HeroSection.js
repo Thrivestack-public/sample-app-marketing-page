@@ -77,7 +77,7 @@ function HeroSection(props) {
                   number={"2"}
                 >
                   <a
-                    href="#"
+                    href="/"
                     className="text-sm font-semibold leading-6 text-gray-900"
                   >
                     Login <span aria-hidden="true">→</span>

@@ -16,9 +16,9 @@ const styles = (theme) => ({
     minWidth: "150px",
   },
   comingSoon: {
-    backgroundColor: "#DDD6FE",
-    border: "1px solid #5B21B6",
-    color: "#5B21B6",
+    backgroundColor: "#FED7AA",
+    border: "1px solid #EA580C",
+    color: "#EA580C",
     fontSize: "10px",
     padding: "2px 12px",
     borderRadius: "6px",
