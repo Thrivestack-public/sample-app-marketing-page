@@ -3,8 +3,20 @@ import PropTypes from "prop-types";
 
 import { thriveSignupUrl } from "../../../constants";
 import Hotspot from "./Hotspot";
-import { Tooltip } from "@mui/material";
+import { Tooltip, tooltipClasses } from "@mui/material";
+import { styled } from "@mui/material/styles";
+import HotspotTooltip from "../hotspotTooltip/HotspotTooltip";
 
+const BootstrapTooltip = styled(({ className, ...props }) => (
+  <Tooltip {...props} arrow classes={{ popper: className }} />
+))(({ theme }) => ({
+  [`& .${tooltipClasses.arrow}`]: {
+    color: theme.palette.common.white,
+  },
+  [`& .${tooltipClasses.tooltip}`]: {
+    backgroundColor: theme.palette.common.white,
+  },
+}));
 function HeroSection(props) {
   return (
     <Fragment>
@@ -26,10 +38,6 @@ function HeroSection(props) {
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                 Welcome to the SaaSBox
-                {/* <a href="#" className="font-semibold text-indigo-600">
-                  <span className="absolute inset-0" aria-hidden="true" />
-                  Read more <span aria-hidden="true">&rarr;</span>
-                </a> */}
               </div>
             </div>
             <div className="text-center">
@@ -43,9 +51,12 @@ function HeroSection(props) {
                 ThriveStack's workflows with your own application.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                <Tooltip
-                  title="User will be redirected to signup page after clicking on signup button"
-                  arrow
+                <HotspotTooltip
+                  label={"Signup CTA"}
+                  text={
+                    "This redirects you to SaaSBuilder's SignUp page crafted using the ThriveStack workflow builder."
+                  }
+                  number={"1"}
                 >
                   <a
                     href={thriveSignupUrl}
@@ -53,15 +64,25 @@ function HeroSection(props) {
                     className="relative rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     Signup
-                    <Hotspot label="1" className="-top-2 -left-2" />
+                    {/* <Hotspot label="1" className="-top-2 -left-2" /> */}
                   </a>
-                </Tooltip>
-                <a
-                  href="#"
-                  className="text-sm font-semibold leading-6 text-gray-900"
+                </HotspotTooltip>
+                <HotspotTooltip
+                  label={"Login CTA"}
+                  text={
+                    "This redirects you to SaaSBuilder's Login page crafted using the ThriveStack workflow builder."
+                  }
+                  placement="right"
+                  isComingSoon
+                  number={"2"}
                 >
-                  Login <span aria-hidden="true">→</span>
-                </a>
+                  <a
+                    href="#"
+                    className="text-sm font-semibold leading-6 text-gray-900"
+                  >
+                    Login <span aria-hidden="true">→</span>
+                  </a>
+                </HotspotTooltip>
               </div>
             </div>
           </div>

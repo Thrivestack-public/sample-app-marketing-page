@@ -1,6 +1,7 @@
 import React from "react";
 import { CheckCircleIcon } from "@heroicons/react/20/solid";
 import { thriveSignupUrl } from "../../../constants";
+import HotspotTooltip from "../hotspotTooltip/HotspotTooltip";
 
 const tiers = [
   {
@@ -72,7 +73,7 @@ export default function PricingSection() {
         </div>
         <div className="mt-20 flow-root">
           <div className="isolate -mt-16 grid max-w-sm grid-cols-1 gap-y-16 divide-y divide-gray-100 sm:mx-auto lg:-mx-8 lg:mt-0 lg:max-w-none lg:grid-cols-3 lg:divide-x lg:divide-y-0 xl:-mx-4">
-            {tiers.map((tier) => (
+            {tiers.map((tier, idx) => (
               <div key={tier.id} className="pt-16 lg:px-8 lg:pt-0 xl:px-14">
                 <h3
                   id={tier.id}
@@ -91,13 +92,33 @@ export default function PricingSection() {
                 <p className="mt-3 text-sm leading-6 text-gray-500">
                   {tier.price.annually} per month if paid annually
                 </p>
-                <a
-                  href={tier.href}
-                  aria-describedby={tier.id}
-                  className="mt-10 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >
-                  Signup
-                </a>
+                {idx === 1 ? (
+                  <HotspotTooltip
+                    label={"Pricing Specific Signup CTA"}
+                    text={
+                      "This redirects you to SaaSBuilder's SignUp page but with pricing specific URL parameters."
+                    }
+                    placement="bottom"
+                    number={"3"}
+                    isComingSoon
+                  >
+                    <a
+                      href={tier.href + `?tier=${tier.id}`}
+                      aria-describedby={tier.id}
+                      className="mt-10 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    >
+                      Signup
+                    </a>
+                  </HotspotTooltip>
+                ) : (
+                  <a
+                    href={tier.href}
+                    aria-describedby={tier.id}
+                    className="mt-10 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  >
+                    Signup
+                  </a>
+                )}
                 <p className="mt-10 text-sm font-semibold leading-6 text-gray-900">
                   {tier.description}
                 </p>
