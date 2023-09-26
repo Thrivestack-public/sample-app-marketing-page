@@ -58,7 +58,16 @@ export default function PricingSection() {
             Pricing
           </h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            Pick the perfect plan for your team
+            Pricing Section of SaaSBox
+          </p>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            In the Pricing Section, SaasBuilder can showcase different pricing
+            plans, each with its unique features. Currently, we offer a free
+            pricing plan, and the feature to select among various plans is
+            coming soon. All pricing signups will use the same signup link, but
+            with distinct search parameters, enabling the signup page to
+            identify the specific pricing plan that users wish to subscribe to
+            once this feature is available.
           </p>
         </div>
         <div className="mt-20 flow-root">
