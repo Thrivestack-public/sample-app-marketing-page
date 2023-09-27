@@ -46,7 +46,7 @@ function HeroSection(props) {
                 ThriveStack's Sample Application
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                This Marketing website page showcases SaaSBox, a sample
+                This is the Marketing Website Page of SaaSBox - a sample
                 application designed to illustrate the seamless integration of
                 ThriveStack's workflows with your own application.
               </p>
