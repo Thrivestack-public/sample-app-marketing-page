@@ -29,6 +29,8 @@ function NavBar(props) {
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  console.log("section", selectedTab);
+
   return (
     <div>
       <header className="absolute inset-x-0 top-0 z-50">
@@ -67,7 +69,9 @@ function NavBar(props) {
                     <button
                       color="secondary"
                       size="large"
-                      className="text-sm font-semibold leading-6 text-gray-900"
+                      className={`text-sm font-semibold leading-6 text-gray-900 ${
+                        selectedTab === element.name ? "text-indigo-600" : ""
+                      }`}
                     >
                       {element.name}
                     </button>
