@@ -6,6 +6,8 @@ export const textConstants = {
   HERO_SECTION_DESCRIPTION:
     "Imagine this page like your product's marketing page which your end users see. You typically want your end users to either Signup or Login as shown below. You enable this by simply plugging the Signup Workflow, Login Workflow using Thrivestack's Workflow builder.",
 
+  IMAGE_SECTION_TITLE: "How it works!",
+
   PRICING_SECTION_CHIP_TEXT: "Pricing",
   PRICING_SECTION_TITLE: "Pricing Section of SaaSBox",
   PRICING_SECTION_DESCRIPTION:
