@@ -53,7 +53,7 @@ function ImageSection() {
                     }
                   }}
                 >
-                  {currStep === 0 ? "See Action" : "Stop"}
+                  {currStep === 0 ? "See it in Action" : "Stop"}
                 </Button>
                 <Button
                   variant="outlined"
