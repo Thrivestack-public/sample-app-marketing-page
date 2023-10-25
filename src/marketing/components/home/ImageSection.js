@@ -5,16 +5,16 @@ import { Button } from "@mui/material";
 
 function ImageSection() {
   const images = {
-    0: `${process.env.PUBLIC_URL}/images/animations/step0.gif`,
-    1: `${process.env.PUBLIC_URL}/images/animations/step1.gif`,
-    2: `${process.env.PUBLIC_URL}/images/animations/step2.gif`,
-    3: `${process.env.PUBLIC_URL}/images/animations/step3.gif`,
-    4: `${process.env.PUBLIC_URL}/images/animations/step4.gif`,
-    5: `${process.env.PUBLIC_URL}/images/animations/step5.gif`,
-    6: `${process.env.PUBLIC_URL}/images/animations/step6.gif`,
-    7: `${process.env.PUBLIC_URL}/images/animations/step7.gif`,
-    8: `${process.env.PUBLIC_URL}/images/animations/step8.gif`,
-    9: `${process.env.PUBLIC_URL}/images/animations/step9.gif`,
+    0: `${process.env.PUBLIC_URL}/images/animations/10.gif`,
+    1: `${process.env.PUBLIC_URL}/images/animations/1.gif`,
+    2: `${process.env.PUBLIC_URL}/images/animations/2.gif`,
+    3: `${process.env.PUBLIC_URL}/images/animations/3.gif`,
+    4: `${process.env.PUBLIC_URL}/images/animations/4.gif`,
+    5: `${process.env.PUBLIC_URL}/images/animations/5.gif`,
+    6: `${process.env.PUBLIC_URL}/images/animations/6.gif`,
+    7: `${process.env.PUBLIC_URL}/images/animations/7.gif`,
+    8: `${process.env.PUBLIC_URL}/images/animations/8.gif`,
+    9: `${process.env.PUBLIC_URL}/images/animations/9.gif`,
   };
   const [currStep, setCurrStep] = useState(0);
 
