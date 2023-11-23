@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 
-import { thriveSignupUrl } from "../../../constants";
+import { thriveLoginUrl, thriveSignupUrl } from "../../../constants";
 import Hotspot from "./Hotspot";
 import { Tooltip, tooltipClasses } from "@mui/material";
 import { styled } from "@mui/material/styles";
@@ -69,11 +69,11 @@ function HeroSection(props) {
                   label={textConstants.LOGIN_BUTTON_HOTSPOT_TOOLTIP_TITLE}
                   text={textConstants.LOGIN_BUTTON_HOTSPOT_TOOLTIP_TEXT}
                   placement="right"
-                  isComingSoon
                   number={textConstants.LOGIN_BUTTON_HOTSPOT_TOOLTIP_NUMBER}
                 >
                   <a
-                    href="/"
+                    href={thriveLoginUrl}
+                    target={"_blank"}
                     className="text-sm font-semibold leading-6 text-gray-900"
                   >
                     Login <span aria-hidden="true">→</span>
