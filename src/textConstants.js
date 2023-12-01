@@ -31,3 +31,7 @@ export const textConstants = {
   SAASBOX_FOOTER_TEXT:
     "SaaSBox is Thrivestack's sample application to help SaaS Builders like you understand how our platform enables your product to become product-led by integrating Thrivestack's Workflows at various product touchpoints. This sample app also gives a demonstration of the lifecycle of the integrations and your product's end user's journey.",
 };
+
+export const  learnTextConstants = {
+
+};
