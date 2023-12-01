@@ -3,7 +3,7 @@ import { InformationCircleIcon, ArrowSmallRightIcon } from '@heroicons/react/20/
 import Modal from './Modal';
 import { useEffectOnce } from '../hooks/useEffectOnce';
 
-const delayForIntro = 300000;
+const delayForIntro = 3000;
 
 export default function InfoSlider() {
   const [openIntroModal, setOpenIntroModal] = useState(false);
