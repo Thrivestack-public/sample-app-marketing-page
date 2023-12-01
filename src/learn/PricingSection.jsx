@@ -96,7 +96,7 @@ export default function PricingSection() {
                 'mt-8 block rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-10'
               )}
             >
-              Get started today
+              Contact Us
             </a>
           </div>
         ))}
