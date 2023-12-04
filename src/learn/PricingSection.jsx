@@ -89,6 +89,7 @@ export default function PricingSection() {
             <a
               href={tier.href}
               aria-describedby={tier.id}
+              id={tier.id + "-contact-us"}
               className={classNames(
                 tier.featured
                   ? 'bg-indigo-600 text-white shadow hover:bg-indigo-500'

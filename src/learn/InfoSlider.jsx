@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { InformationCircleIcon, ArrowSmallRightIcon } from '@heroicons/react/20/solid'
-import Modal from './Modal';
 import { useEffectOnce } from '../hooks/useEffectOnce';
+import Modal from './Modal';
 
 const delayForIntro = 3000;
 
-export default function InfoSlider() {
-  const [openIntroModal, setOpenIntroModal] = useState(false);
-  const [contentId, setContentId] = useState(1);
-
+export default function InfoSlider({ contentId, setContentId, startAnimation, openIntroModal, setOpenIntroModal }) {
   useEffectOnce(() => {
     const timeout = setTimeout(() => {
       setOpenIntroModal(true);
@@ -75,7 +72,7 @@ export default function InfoSlider() {
           </div>
         </div>
         <div className="mt-10">
-          <button onClick={() => setContentId(3)} className="inline-flex justify-center rounded-md bg-indigo-600 px-8 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+          <button onClick={() => startAnimation()} className="inline-flex justify-center rounded-md bg-indigo-600 px-8 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
             Replace
           </button>
         </div>

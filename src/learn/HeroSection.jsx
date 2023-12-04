@@ -14,7 +14,7 @@ export default function HeroSection() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <div className="bg-white">
-      <header className="absolute inset-x-0 top-0 z-50">
+      <header className="absolute inset-x-0 top-0 z-30">
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
           aria-label="Global"
@@ -48,6 +48,7 @@ export default function HeroSection() {
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
                 href="#"
+                id="header-contact-us"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
                 Contact Us
@@ -60,8 +61,8 @@ export default function HeroSection() {
           open={mobileMenuOpen}
           onClose={setMobileMenuOpen}
         >
-          <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div className="fixed inset-0 z-30" />
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-30 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
@@ -131,12 +132,14 @@ export default function HeroSection() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
+                id="hero-contact-us"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Contact Us
               </a>
               <a
                 href="#"
+                id="hero-learn-more"
                 className="rounded-md bg-gray-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-400"
               >
                 Learn more
