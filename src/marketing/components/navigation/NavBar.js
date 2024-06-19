@@ -10,7 +10,7 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import NavigationDrawer from "../../../shared/components/NavigationDrawer";
-import { thriveSignupUrl } from "../../../constants";
+import { thriveLoginUrl, thriveSignupUrl } from "../../../constants";
 
 function NavBar(props) {
   const { handleMobileDrawerClose, mobileDrawerOpen, selectedTab } = props;
@@ -44,7 +44,7 @@ function NavBar(props) {
               className="-m-1.5 p-1.5 flex gap-2 justify-center items-center font-semibold"
             >
               <img className="h-8 w-auto" src="/brand_logo.png" alt="" />
-              <span>SaaSBox</span>
+              <span>Acme Labs</span>
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -92,7 +92,9 @@ function NavBar(props) {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-4">
             <a
-              href="#"
+              href={thriveLoginUrl}
+              onClick={handleMobileDrawerClose}
+              target={"_blank"}
               className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-indigo-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Login <span aria-hidden="true">→</span>
@@ -117,7 +119,7 @@ function NavBar(props) {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span>SaaSBox</span>
+                <span>Acme Labs</span>
                 <img
                   className="h-8 w-auto"
                   src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"

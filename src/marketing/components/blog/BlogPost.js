@@ -36,7 +36,7 @@ function BlogPost(props) {
   const { classes, date, title, src, content, otherArticles } = props;
 
   useEffect(() => {
-    document.title = `SampleSaas - ${title}`;
+    document.title = `Acme Labs - ${title}`;
     smoothScrollTop();
   }, [title]);
 

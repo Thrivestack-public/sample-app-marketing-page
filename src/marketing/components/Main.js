@@ -29,13 +29,13 @@ function Main(props) {
 
   const selectHome = useCallback(() => {
     smoothScrollTop();
-    document.title = "SampleSaas -  a SaaS application";
+    document.title = "Acme Labs - a SaaS application";
     setSelectedTab("Home");
   }, [setSelectedTab]);
 
   const selectBlog = useCallback(() => {
     smoothScrollTop();
-    document.title = "SampleSaas - Blog";
+    document.title = "Acme Labs - Blog";
     setSelectedTab("Blog");
   }, [setSelectedTab]);
 
